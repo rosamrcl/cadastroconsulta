@@ -14,7 +14,7 @@ Respostas padronizadas em JSON
 
 🚀 Como Usar
 Requisitos
-Servidor PHP (Apache, Nginx, etc.)
+Servidor PHP 
 
 Permissão de escrita no diretório
 Endpoints
