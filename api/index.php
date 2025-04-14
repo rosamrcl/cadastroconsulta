@@ -78,16 +78,15 @@ switch ($method) {
                 "message" => "Erro ao salvar o produto."
             ));
         }    
-    
-    
-    }
-        break;
-
-    default:
+        
+        default:
         http_response_code(405);
         echo json_encode(array(
             "success" => false,
             "message" => "Método não permitido."
         ));
+    
+    }
+
 
 ?>
