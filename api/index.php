@@ -76,12 +76,12 @@ if($amb['method']=='GET'){
                 "data" => $newProduct
         ));
         }
-        default:
-        http_response_code(405);
-        echo json_encode(array(
-            "success" => false,
-            "message" => "Método não permitido."
-        ));
+        // default:
+        // http_response_code(405);
+        // echo json_encode(array(
+        //     "success" => false,
+        //     "message" => "Método não permitido."
+        // ));
     
     
     
