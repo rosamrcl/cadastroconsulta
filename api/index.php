@@ -54,11 +54,9 @@ switch ($method) {
 
         $newProduct = array(
             "id" => uniqid(),
-            "name" => htmlspecialchars(strip_tags($newProductData['name'])),
-            "descricao" => isset($newProductData['descricao']) ? htmlspecialchars(strip_tags($newProductData['descricao'])) : null,
+            "name" => htmlspecialchars(strip_tags($newProductData['name'])),            
             "preco" => floatval($newProductData['price']),
-            "quantidade" => intval($newProductData['amount']),
-            "data_criacao" => date('Y-m-d H:i:s')
+            "quantidade" => intval($newProductData['amount']),            
         );
 
         $products = readProduct();
