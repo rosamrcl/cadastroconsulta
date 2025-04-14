@@ -1,50 +1,40 @@
-Como usar a API
-Cadastrar produto (POST)
-URL: http://seusite.com/api/index.php
-Método: POST
-Headers:
-  Content-Type: application/json
-Body:
-{
-    "nome": "Smartphone",
-    "descricao": "Modelo XYZ 128GB",
-    "preco": 1999.90,
-    "quantidade": 15
-}
-Consultar produtos (GET)
-URL: http://seusite.com/api/index.php
-Método: GET
+📦 API Simples de Gerenciamento de Produtos (PHP + JSON)
+Esta é uma API RESTful simples para gerenciamento de produtos, desenvolvida em PHP com armazenamento em arquivo JSON. Ideal para pequenos projetos e estudos.
+
+📌 Funcionalidades
+Listar todos os produtos (GET)
+
+Cadastrar novo produto (POST)
+
+Validação de dados
+
+Armazenamento persistente em JSON
+
+Respostas padronizadas em JSON
+
+🚀 Como Usar
+Requisitos
+Servidor PHP 
+
+Permissão de escrita no diretório
+Endpoints
+GET /api.php - Listar produtos
+Retorna todos os produtos cadastrados.
+
+POST /api.php - Criar produto
+Cadastra um novo produto.
+
+Parâmetros obrigatórios (body JSON):
+
+name: Nome do produto (string)
+
+price: Preço (number)
+
+amount: Quantidade em estoque (integer)
+
+Parâmetro opcional:
+
+descricao: Descrição detalhada (string)
 
 
 
-Funcionalidades
-Cadastro de produtos:
-
-Gera um ID único automaticamente
-
-Armazena nome, descrição (opcional), preço e quantidade
-
-Registra data/hora de criação
-
-Consulta de produtos:
-
-Retorna todos os produtos cadastrados
-
-Formato JSON organizado
-
-Validações básicas:
-
-Verifica campos obrigatórios (nome, preço, quantidade)
-
-Proteção básica contra XSS (htmlspecialchars + strip_tags)
-
-Conversão de tipos (preço para float, quantidade para int)
-
-Vantagens desta abordagem
-Não requer instalação/configuração de banco de dados
-
-Fácil de implementar e testar
-
-Ideal para protótipos ou pequenas aplicações
-
-Dados persistentes entre execuções (armazenados em JSON)
